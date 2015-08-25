@@ -1,0 +1,133 @@
+@font-face {
+	font-family: 'icomoon';
+	src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMghi/bsAAAC8AAAAYGNtYXDnQOeEAAABHAAAAFRnYXNwAAAAEAAAAXAAAAAIZ2x5ZnACeSQAAAF4AAABIGhlYWQCylHDAAACmAAAADZoaGVhA+IB6AAAAtAAAAAkaG10eAcAAHQAAAL0AAAAHGxvY2EAqADoAAADEAAAABBtYXhwAAkAJwAAAyAAAAAgbmFtZVcZpu4AAANAAAABRXBvc3QAAwAAAAAEiAAAACAAAwIAAZAABQAAAUwBZgAAAEcBTAFmAAAA9QAZAIQAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADnBQHg/+AAIAHgACAAAAABAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEAEAAAAAMAAgAAgAEAAEAIOcB5wX//f//AAAAAAAg5wDnBf/9//8AAf/jGQQZAQADAAEAAAAAAAAAAAAAAAAAAQAB//8ADwABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAAAAAAAAAAAAIAADc5AQAAAAABAAD/4AIAAeAAGAAAARUzNRcHNSMVMwcnMzUjFSc3FTM1IzcXIwEggGBggEBgYECAYGCAP19fPwGBgUBgYEGBYGCBQWBgQIFfXwAAAQAU//MB7AHNACQAAAEHFxYUDwEGIi8BBwYiLwEmND8BJyY0PwE2Mh8BNzYyHwEWFAcB7JSUBARDBQ0FkpIFDQVDBASSkgQEQwUNBZGTBQ0FQwQEAXSUlAQNBUMEBJOTBARDBQ0Ek5IFDQVCBQWRlAQEQwUNBAAAAQBg/+ABoAHgAAMAABMRCQFgAUD+wAHg/gABAAEAAAABAAAAAQAAs/Vlkl8PPPUACwIAAAAAANDViIMAAAAA0NWIgwAA/+ACAAHgAAAACAACAAAAAAAAAAEAAAHg/+AAAAIAAAAAAAIAAAEAAAAAAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAAAQAAAAIAAAACAAAUAgAAYAAAAAAACgAUAB4ARACAAJAAAQAAAAcAJQABAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA4ArgABAAAAAAABAA4AAAABAAAAAAACAA4ARwABAAAAAAADAA4AJAABAAAAAAAEAA4AVQABAAAAAAAFABYADgABAAAAAAAGAAcAMgABAAAAAAAKADQAYwADAAEECQABAA4AAAADAAEECQACAA4ARwADAAEECQADAA4AJAADAAEECQAEAA4AVQADAAEECQAFABYADgADAAEECQAGAA4AOQADAAEECQAKADQAYwBpAGMAbwBtAG8AbwBuAFYAZQByAHMAaQBvAG4AIAAxAC4AMABpAGMAbwBtAG8AbwBuaWNvbW9vbgBpAGMAbwBtAG8AbwBuAFIAZQBnAHUAbABhAHIAaQBjAG8AbQBvAG8AbgBGAG8AbgB0ACAAZwBlAG4AZQByAGEAdABlAGQAIABiAHkAIABJAGMAbwBNAG8AbwBuAC4AAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==) format('truetype'),
+		 url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAAT0AAsAAAAABKgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABPUy8yAAABCAAAAGAAAABgCGL9u2NtYXAAAAFoAAAAVAAAAFTnQOeEZ2FzcAAAAbwAAAAIAAAACAAAABBnbHlmAAABxAAAASAAAAEgcAJ5JGhlYWQAAALkAAAANgAAADYCylHDaGhlYQAAAxwAAAAkAAAAJAPiAehobXR4AAADQAAAABwAAAAcBwAAdGxvY2EAAANcAAAAEAAAABAAqADobWF4cAAAA2wAAAAgAAAAIAAJACduYW1lAAADjAAAAUUAAAFFVxmm7nBvc3QAAATUAAAAIAAAACAAAwAAAAMCAAGQAAUAAAFMAWYAAABHAUwBZgAAAPUAGQCEAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAA5wUB4P/gACAB4AAgAAAAAQAAAAAAAAAAAAAAIAAAAAAAAgAAAAMAAAAUAAMAAQAAABQABABAAAAADAAIAAIABAABACDnAecF//3//wAAAAAAIOcA5wX//f//AAH/4xkEGQEAAwABAAAAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAA/+ACAAHgABgAAAEVMzUXBzUjFTMHJzM1IxUnNxUzNSM3FyMBIIBgYIBAYGBAgGBggD9fXz8BgYFAYGBBgWBggUFgYECBX18AAAEAFP/zAewBzQAkAAABBxcWFA8BBiIvAQcGIi8BJjQ/AScmND8BNjIfATc2Mh8BFhQHAeyUlAQEQwUNBZKSBQ0FQwQEkpIEBEMFDQWRkwUNBUMEBAF0lJQEDQVDBASTkwQEQwUNBJOSBQ0FQgUFkZQEBEMFDQQAAAEAYP/gAaAB4AADAAATEQkBYAFA/sAB4P4AAQABAAAAAQAAAAEAALP1ZZJfDzz1AAsCAAAAAADQ1YiDAAAAANDViIMAAP/gAgAB4AAAAAgAAgAAAAAAAAABAAAB4P/gAAACAAAAAAACAAABAAAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAAAEAAAACAAAAAgAAFAIAAGAAAAAAAAoAFAAeAEQAgACQAAEAAAAHACUAAQAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAOAK4AAQAAAAAAAQAOAAAAAQAAAAAAAgAOAEcAAQAAAAAAAwAOACQAAQAAAAAABAAOAFUAAQAAAAAABQAWAA4AAQAAAAAABgAHADIAAQAAAAAACgA0AGMAAwABBAkAAQAOAAAAAwABBAkAAgAOAEcAAwABBAkAAwAOACQAAwABBAkABAAOAFUAAwABBAkABQAWAA4AAwABBAkABgAOADkAAwABBAkACgA0AGMAaQBjAG8AbQBvAG8AbgBWAGUAcgBzAGkAbwBuACAAMQAuADAAaQBjAG8AbQBvAG8Abmljb21vb24AaQBjAG8AbQBvAG8AbgBSAGUAZwB1AGwAYQByAGkAYwBvAG0AbwBvAG4ARgBvAG4AdAAgAGcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAuAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-play:before {
+	content: "\e705";
+}
+
+.icon-move:before {
+	content: "\e700";
+}
+
+.icon-cancel:before {
+	content: "\e701";
+}
+
+.epiMultimediaContainer {
+    position: relative;
+}
+
+.epiMultimediaContainer .epi-content-area-editor {
+    width: 560px;
+}
+
+.epiMultimediaContainer .epi-content-area-actionscontainer div {
+  display: none;
+}
+
+.multimediaEditorItemContainer {
+    overflow: hidden;
+    width: 560px;
+}
+
+.multimediaRow {
+  
+}
+
+.multimediaRow.dojoDndItemOver.dojoDndItemBefore td {
+  border-top: 2px solid gray;
+}
+
+.multimediaRow.dojoDndItemOver.dojoDndItemAfter td {
+  border-bottom: 2px solid gray;
+}
+
+    .multimediaRow .imgPrev {
+        width: 30%;
+    }
+
+    .multimediaRow td {
+      padding:10px;
+      cursor: default;
+    }
+
+    .multimediaRow td img {
+        max-width: 150px;
+    }
+    
+    .multimediaEditorItemContainer tr td:first-child, .multimediaEditorItemContainer tr td:last-child {
+      text-align: center;
+    }
+
+    .multimediaEditorItemContainer td .icon {
+      font-size: 25px;
+      cursor: move;
+      color: gray;
+    }
+
+    .multimediaEditorItemContainer tr td:last-child .icon {
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .multimediaEditorItemContainer tr:nth-child(odd) {
+      background-color: #f8f9f9;
+      padding: 5px;
+    }
+
+    .dojoDndAvatar {
+      max-width: 500px;
+    }
+
+
+.epiMultimediaContainer .multiMediaDesc {
+    position: relative;
+    white-space: normal;
+}
+.epiMultimediaContainer .textareaContainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 240px;
+    height: 100px;
+}
+
+.epiMultimediaContainer .contentEditableDiv {
+    width: 93%;
+    min-height: 67px;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid gray;
+    margin-top: 10px;
+    cursor: text;
+    white-space: normal;
+}
+
+.epiMultimediaContainer .descHolder {
+    cursor: text;
+    width: 100%;
+    min-height: 20px;
+}
+
+.epiMultimediaContainer .imgPrev {
+    cursor: default;
+}
