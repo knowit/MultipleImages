@@ -102,6 +102,7 @@
 .epiMultimediaContainer .multiMediaDesc {
     position: relative;
     white-space: normal;
+    width: 50%;
 }
 .epiMultimediaContainer .textareaContainer {
     position: absolute;
