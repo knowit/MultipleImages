@@ -61,12 +61,6 @@ define([
 	            this._setupTarget(myself);
 	        },
 	        startup: function () {
-	            var myself = this;
-
-	            this.setupJsonObjectHolder();
-	            this.setupImageTable();
-	            this.bindEvents(myself);
-	            this._setupInternalDnD(myself);
 	        },
 	        _setupInternalDnD: function (myself) {
 	            this.table = new dojo.dnd.Source(this.multimediaEditorItemContainer.node);
@@ -297,6 +291,13 @@ define([
 	        // Setter for value property. It runs at startup. 
 	        _setValueAttr: function (value) {
 	            this._setValue(value);
+                
+                var myself = this;
+
+	            this.setupJsonObjectHolder();
+	            this.setupImageTable();
+	            this.bindEvents(myself);
+	            this._setupInternalDnD(myself);
 	        },
 	        _setValue: function (value) {
 
